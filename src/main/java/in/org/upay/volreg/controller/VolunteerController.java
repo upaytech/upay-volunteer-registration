@@ -1,7 +1,6 @@
 package in.org.upay.volreg.controller;
 
 import in.org.upay.volreg.dto.VolunteerRegistration;
-import in.org.upay.volreg.email.EmailService;
 import in.org.upay.volreg.manager.VolunteerManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

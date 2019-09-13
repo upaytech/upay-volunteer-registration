@@ -29,7 +29,7 @@ public class EmailTemplate {
                     "    <td style='border: 1px solid grey; padding: 10px'>%s</td>" +
                     "  </tr>" +
                     "  <tr style='background: #d4d4d4'>" +
-                    "    <td style='border: 1px solid grey; padding: 10px'><b>Nearest Upay Center</b></td>" +
+                    "    <td style='border: 1px solid grey; padding: 10px'><b>City</b></td>" +
                     "    <td style='border: 1px solid grey; padding: 10px'>%s</td>" +
                     "  </tr>" +
                     "  <tr>" +

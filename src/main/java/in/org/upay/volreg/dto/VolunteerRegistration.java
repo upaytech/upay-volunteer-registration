@@ -16,7 +16,7 @@ public class VolunteerRegistration {
     @NotEmpty @NotNull
     private String qualification;
     @NotEmpty @NotNull
-    private String centerName;
+    private String cityName;
     @NotEmpty @NotNull
     private String[] contributionMethod;
     @NotEmpty @NotNull
