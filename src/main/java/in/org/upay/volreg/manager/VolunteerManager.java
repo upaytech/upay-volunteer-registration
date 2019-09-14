@@ -26,6 +26,8 @@ public class VolunteerManager {
             break;
             case "MOUDA": emails = "piyushranjan95@gmail.com,directortech.upay@gmail.com";
             break;
+            case "NAGPUR": emails = "piyushranjan95@gmail.com,deboshreeb11@gmail.com";
+            break;
             default:
                 emails = "piyushranjan95@gmail.com";
         }

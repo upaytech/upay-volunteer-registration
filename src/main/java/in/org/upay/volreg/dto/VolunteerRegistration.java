@@ -24,8 +24,4 @@ public class VolunteerRegistration {
     @NotEmpty @NotNull
     private String experienced;
 
-    /**
-     {"name": "Piyush", "email": "piyushranjan95@gmail.com", "mobile": "9504875678", "qualification": "BE", "centerName": "pune", "contributionMethod": ["teaching"], "whyUpay": "ksjvn jnkjsfv", "experienced": false}
-     */
-
 }
