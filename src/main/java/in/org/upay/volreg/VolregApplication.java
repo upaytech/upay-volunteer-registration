@@ -25,18 +25,4 @@ public class VolregApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(VolregApplication.class, args);
 	}
-
-	@Bean
-	public CommandLineRunner demo(VolunteerRepository repository) {
-		return (args) -> {
-				repository.save(new Volunteer("Piyush Ranjan", "piyushranjan95@gmail.com"));
-				repository.save(new Volunteer("Akshay", "aks@gmail.com"));
-
-				log.info("volunteers with find all");
-				for (Volunteer volunteer :  repository.findAll()) {
-					log.info(volunteer.toString());
-				}
-		};
-	}
-
 }
