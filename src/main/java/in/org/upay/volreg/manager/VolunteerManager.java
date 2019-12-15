@@ -34,9 +34,10 @@ public class VolunteerManager {
             break;
             case "NAGPUR": emails = "upayngp@gmail.com,upaypr@gmail.com";
             break;
-            case "DELHI": emails = "upaydelhi@gmail.com,upaypr@gmail.com";
+            case "NOIDA":
+            case "NEW DELHI": emails = "upaydelhi@gmail.com,upaypr@gmail.com";
             break;
-            case "GURUGRAM": emails = "upayncr@gmail.com,upaypr@gmail.com";
+            case "GURGAON": emails = "upayncr@gmail.com,upaypr@gmail.com";
             break;
             case "BANGALORE": emails = "upaybangalore@gmail.com,upaypr@gmail.com";
             break;
