@@ -60,6 +60,7 @@ public class VolunteerManager {
     public void registerNewVolunteer(VolunteerRegistration registration) {
         Volunteer volunteer = new Volunteer();
         BeanUtils.copyProperties(registration, volunteer);
+        // todo: exception handling??
         repository.save(volunteer);
         sendRegistrationNotification(registration);
     }
