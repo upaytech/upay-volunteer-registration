@@ -25,17 +25,23 @@ public class VolunteerManager {
     private VolunteerRepository repository;
 
     private String[] getNotificationAddresses(String cityName) {
-        // todo: initialize a map with city and emails fetched from DB
+        // todo: read emails from env based properties file
         String emails = "";
         switch (cityName.toUpperCase()) {
-            case "PUNE": emails = "piyushranjan95@gmail.com,varun.iitkgp@gmail.com";
+            case "PUNE": emails = "upaypune@gmail.com,upaypr@gmail.com";
             break;
-            case "MOUDA": emails = "piyushranjan95@gmail.com,directortech.upay@gmail.com";
+            case "MOUDA": emails = "upaymda@gmail.com,upaypr@gmail.com";
             break;
-            case "NAGPUR": emails = "piyushranjan95@gmail.com,deboshreeb11@gmail.com";
+            case "NAGPUR": emails = "upayngp@gmail.com,upaypr@gmail.com";
+            break;
+            case "DELHI": emails = "upaydelhi@gmail.com,upaypr@gmail.com";
+            break;
+            case "GURUGRAM": emails = "upayncr@gmail.com,upaypr@gmail.com";
+            break;
+            case "BANGALORE": emails = "upaybangalore@gmail.com,upaypr@gmail.com";
             break;
             default:
-                emails = "piyushranjan95@gmail.com";
+                emails = "upaypr@gmail.com";
         }
 
         return emails.split(",");
