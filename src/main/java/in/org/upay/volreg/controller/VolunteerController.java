@@ -2,12 +2,13 @@ package in.org.upay.volreg.controller;
 
 import in.org.upay.volreg.dto.VolunteerRegistration;
 import in.org.upay.volreg.manager.VolunteerManager;
+import in.org.upay.volreg.model.Volunteer;
 import in.org.upay.volreg.repository.VolunteerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.Optional;
 
 @RestController
 public class VolunteerController {
@@ -25,6 +26,19 @@ public class VolunteerController {
         volunteerManager.registerNewVolunteer(registration);
 
     }
+
+    @GetMapping
+    @CrossOrigin
+    public Iterable<Volunteer> getAllVolunteers() {
+        return volunteerRepository.findAll();
+    }
+
+    @GetMapping("{id}")
+    @CrossOrigin
+    public Optional<Volunteer> getVolunteerById(@Valid @PathVariable(value = "id") Long id) {
+        return volunteerRepository.findById(id);
+    }
+
 }
 
 
