@@ -9,6 +9,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.sql.Array;
 import java.util.Arrays;
 
 /**
@@ -23,6 +24,8 @@ public class VolunteerManager {
 
     @Autowired
     private VolunteerRepository repository;
+
+    private static String REGISTRATION_EMAIL_SUBJECT = "Upay volunteer registration";
 
     private String[] getNotificationAddresses(String cityName) {
         // todo: read emails from env based properties file
@@ -63,6 +66,18 @@ public class VolunteerManager {
         // todo: exception handling??
         repository.save(volunteer);
         sendRegistrationNotification(registration);
+    }
+
+    public void sendRegistrationEmail(Long id) {
+        Volunteer volunteer = repository.findById(id).get();
+        String[] to = new String[]{volunteer.getEmail()};
+        String registration_link = getRegistrationLink(volunteer.getId());
+        String text = String.format(EmailTemplate.REGISTRATION_LINK, volunteer.getName(), registration_link);
+        emailService.sendEmail(to, REGISTRATION_EMAIL_SUBJECT, text);
+    }
+
+    private String getRegistrationLink(Long id) {
+        return "https://upay.org.in/register/"+id;
     }
 }
 
