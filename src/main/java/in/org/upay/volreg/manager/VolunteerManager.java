@@ -73,7 +73,7 @@ public class VolunteerManager {
         String subject = String.format(EmailTemplate.REGISTRATION_EMAIL_MESSAGE, registration.getCityName());
         String text = String.format(EmailTemplate.HTML_EMAIL_CONTENT, registration.getName(), registration.getEmail(), registration.getMobile(),
                                     registration.getQualification(), registration.getCityName(), Arrays.toString(registration.getContributionMethod())
-                                   , registration.getWhyUpay(), registration.getExperienced());
+                                   , registration.getWhyUpay(), registration.getExperienced(), registration.getExtraAcademy());
         emailService.sendEmail(to, subject, text);
     }
 
