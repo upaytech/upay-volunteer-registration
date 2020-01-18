@@ -77,8 +77,6 @@ public class VolunteerManager {
     }
 
     private String getRegistrationLink(Long id) {
-        // todo: update with correct url
-        // todo: send uuid instead of id (add uuid in DB)
         return "https://upay.org.in/register/"+id;
     }
 }
