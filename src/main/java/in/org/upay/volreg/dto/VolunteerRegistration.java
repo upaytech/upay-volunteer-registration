@@ -23,5 +23,7 @@ public class VolunteerRegistration {
     private String whyUpay;
     @NotEmpty @NotNull
     private String experienced;
+    @NotEmpty @NotNull
+    private String extraAcademy;
 
 }
