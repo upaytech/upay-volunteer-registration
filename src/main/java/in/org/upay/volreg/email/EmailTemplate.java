@@ -48,10 +48,4 @@ public class EmailTemplate {
                     "" +
                     "<p> Thanks </p>";
 
-    public static final String REGISTRATION_LINK = "<p>Hi %s,</p>" +
-            "<p>We are glad to have you on board. Please click on the link below to verify your email address and proceed with the registration.</p>" +
-            "<p>%s</p>" +
-            "<p>Feel free to reach out to us in case of any issue." +
-            "<p>Upay NGO</p>" ;
-
 }

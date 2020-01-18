@@ -39,12 +39,6 @@ public class VolunteerController {
         return volunteerRepository.findById(id);
     }
 
-    @GetMapping("register/{id}")
-    @CrossOrigin
-    public void sendRegistrationEmail(@Valid @PathVariable(value = "id") Long id) {
-        volunteerManager.sendRegistrationEmail(id);
-    }
-
 }
 
 
