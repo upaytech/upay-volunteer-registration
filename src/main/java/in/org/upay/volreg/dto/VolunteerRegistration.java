@@ -18,6 +18,8 @@ public class VolunteerRegistration {
     @NotEmpty @NotNull
     private String cityName;
     @NotEmpty @NotNull
+    private String centerName;
+    @NotEmpty @NotNull
     private String[] contributionMethod;
     @NotEmpty @NotNull
     private String whyUpay;

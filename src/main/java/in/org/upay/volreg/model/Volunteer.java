@@ -19,6 +19,8 @@ public class Volunteer {
     private String mobile;
     private String qualification;
     private String cityName;
+    private String centerName;
+
 
     public Volunteer(String name, String email) {
         this.name = name;

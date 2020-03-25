@@ -33,18 +33,22 @@ public class EmailTemplate {
                     "    <td style='border: 1px solid grey; padding: 10px'>%s</td>" +
                     "  </tr>" +
                     "  <tr>" +
+                    "    <td style='border: 1px solid grey; padding: 10px'><b>Center</b></td>" +
+                    "    <td style='border: 1px solid grey; padding: 10px'>%s</td>" +
+                    "  </tr>" +
+                    "  <tr style='background: #d4d4d4'>" +
                     "    <td style='border: 1px solid grey; padding: 10px'><b>How do you wish to contribute</b></td>" +
                     "    <td style='border: 1px solid grey; padding: 10px'>%s</td>" +
                     "  </tr>" +
-                    "  <tr style='background: #d4d4d4'>" +
+                    "  <tr>" +
                     "    <td style='border: 1px solid grey; padding: 10px'><b>Why do you want to join Upay (Include how did you know about upay)</b></td>" +
                     "    <td style='border: 1px solid grey; padding: 10px'>%s</td>" +
                     "  </tr>" +
-                    "  <tr>" +
+                    "  <tr style='background: #d4d4d4'>" +
                     "    <td style='border: 1px solid grey; padding: 10px'><b>Do you have any previous experience in Social Work, teaching, etc ?</b></td>" +
                     "    <td style='border: 1px solid grey; padding: 10px'>%s</td>" +
                     "  </tr>" +
-                    "  <tr style='background: #d4d4d4'>" +
+                    "  <tr>" +
                     "    <td style='border: 1px solid grey; padding: 10px'><b>Do you have any certifications in extra academic activities like singing, dancing, sports etc.?" +
                     "       Are you willing to train the children?</b></td>" +
                     "    <td style='border: 1px solid grey; padding: 10px'>%s</td>" +
