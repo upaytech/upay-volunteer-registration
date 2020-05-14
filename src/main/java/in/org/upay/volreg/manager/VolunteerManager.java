@@ -55,7 +55,7 @@ public class VolunteerManager {
             case "NAGPUR": emails = EMAIL_NAGPUR;
             break;
             case "NOIDA":
-            case "NEW DELHI": emails = EMAIL_DELHI;
+            case "DELHI": emails = EMAIL_DELHI;
             break;
             case "GURGAON": emails = EMAIL_NCR;
             break;
